@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="border">
+      <div class="flex">
+        <div class="group">
+          <div class="result"></div>
+          <div class="firstNumber secondNumber"></div>
+          <!-- <div class="opperator"></div> -->
+          <!-- <div class="secondNumber"></div> -->
+        </div>
+      </div>
+      <div onclick="handleClear()" class="inner-border clear gray">c</div>
+      <div class="inner-border math gray"></div>
+      <div class="inner-border math1 gray"></div>
+      <div class="inner-border orange" onclick="appendOperator('/')">÷</div>
+
+      <div class="inner-border" onclick="appendValue(7)">7</div>
+      <div class="inner-border" onclick="appendValue(8)">8</div>
+      <div class="inner-border" onclick="appendValue(9)">9</div>
+      <div class="inner-border orange" onclick="appendOperator('*')">*</div>
+
+      <div class="inner-border" onclick="appendValue(4)">4</div>
+      <div class="inner-border" onclick="appendValue(5)">5</div>
+      <div class="inner-border" onclick="appendValue(6)">6</div>
+      <div class="inner-border orange" onclick="appendOperator('-')">-</div>
+
+      <div class="inner-border" onclick="appendValue(1)">1</div>
+      <div class="inner-border" onclick="appendValue(2)">2</div>
+      <div class="inner-border" onclick="appendValue(3)">3</div>
+      <div class="inner-border orange" onclick="appendOperator('+')">+</div>
+
+      <div class="inner-border width" onclick="appendValue(0)">0</div>
+      <!-- <div class="inner-border math1"></div> -->
+      <div class="inner-border math1"></div>
+
+      <div onclick="handleResult()" class="inner-border calculateButton orange">
+        =
+      </div>
+    </section>
+  </body>
+  <script src="app.js"></script>
+</html>
